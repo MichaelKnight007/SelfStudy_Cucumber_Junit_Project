@@ -1,3 +1,4 @@
+@smoke
 Feature: User should be able to login
   User Story:
   As a user, I should be able to login with valid credentials to different accounts. And dashboard should be displayed.

@@ -1,3 +1,5 @@
+
+@smoke
 Feature: Wikipedia Search Functionality Scenario Outline
 
   @wiki_2

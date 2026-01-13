@@ -1,4 +1,4 @@
-@wiki
+@wiki @smoke
 Feature: Wikipedia Search Functionality
 
   Background: User uses search functionality

@@ -6,7 +6,7 @@
 #1. Follow POM Design Pattern
 #2. BDD implementation
 
-  @bing
+  @bing @smoke
   Feature: Search functionality of Bing web site
     Background: User is on the bing search page
       Given User navigates to Bing search page
@@ -17,7 +17,7 @@
 
 
       # -------------------- Parameterization --------------------------------
-
+    @smoke
     Scenario: User searches for orange
       When user enters "orange" into Bing search box
       Then user should see "orange12" in the title

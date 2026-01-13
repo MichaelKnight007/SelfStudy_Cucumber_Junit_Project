@@ -1,4 +1,4 @@
-@wip
+@wip @smoke
 Feature: Web Table Login Functionality
 
   Scenario: Web Table Login scenario Hard coded implementation

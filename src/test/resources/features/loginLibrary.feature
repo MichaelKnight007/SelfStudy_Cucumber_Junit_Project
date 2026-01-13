@@ -1,4 +1,4 @@
-@dekked
+@dekked @smoke
 Feature: Library login feature
   User Story:
   As a user, I should be able to login with correct credentials to different accounts. And dashboard should be displayed.
@@ -15,7 +15,7 @@ Feature: Library login feature
     And  user enters librarian password
     Then user should see the dashboard
 
-  @student @regression
+  @student @regression @smoke
   Scenario: Login as a librarian
    # Given user is on the login page of the library application
     When  user enters student username

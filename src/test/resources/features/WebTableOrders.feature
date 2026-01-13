@@ -1,3 +1,5 @@
+
+@smoke
 Feature: Web table orders functionality
 
   Background: User is already Logged in
