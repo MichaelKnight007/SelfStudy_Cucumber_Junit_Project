@@ -2,6 +2,7 @@ package com.cydeo.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -97,7 +98,7 @@ public class Driver {
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                 }
                 case "firefox" -> {
-                    driverPool.set( new FirefoxDriver());
+                    driverPool.set(new FirefoxDriver());
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                 }
@@ -106,6 +107,11 @@ public class Driver {
                     driverPool.set(new EdgeDriver());
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                }
+                case "headless-chrome" -> {
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless=new");
+                    driverPool.set(new ChromeDriver(options));
                 }
             }
         }
