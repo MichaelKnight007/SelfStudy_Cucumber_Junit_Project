@@ -34,10 +34,10 @@ public class Hooks {
         */
           //Bu if we want to use it for only failing scenarios
 
-        if(scenario.isFailed()) {
+      /*  if(scenario.isFailed()) {
             byte [] screenshot=((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
-        }
+        }*/
 
 
         System.out.println("--> @After: is running after every scenario");
