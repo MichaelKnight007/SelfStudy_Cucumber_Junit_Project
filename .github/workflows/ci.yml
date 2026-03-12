@@ -31,8 +31,8 @@ on:
     - cron: '0 11 * * *'
 
 env:
-  BASE_URL: https://library2.cydeo.com/login.html
-  DB_BASE_URL: jdbc:mysql://34.230.35.214:3306/library2
+  BASE_URL: https://qa2.vytrack.com/user/login
+ # DB_BASE_URL: jdbc:mysql://34.230.35.214:3306/library2
   APP_USERNAME: librarian44@library
   APP_PASSWORD: libraryUser
 
