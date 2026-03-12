@@ -39,10 +39,12 @@
     <dependencies>
         <!-- ***************** Dependencies in order *********************** -->
         <!-- #1 https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.39.0</version>
+            <version>4.40.0</version>
+            <scope>compile</scope>
         </dependency>
 
 
@@ -54,18 +56,36 @@
         </dependency>
 
         <!-- #3 https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-        <dependency>
+
+       <!-- <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.33.0</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
 
-        <!-- #4 https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
+            <version>7.34.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- #4 https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <!--<dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
             <version>7.33.0</version>
+            <scope>test</scope>
+        </dependency>-->
+
+        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.34.2</version>
+            <scope>test</scope>
         </dependency>
 
         <!--A reporter plug-in for pretty Cucumber reports (me.jvt.cucumber reporting-->

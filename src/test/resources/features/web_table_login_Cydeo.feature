@@ -1,4 +1,4 @@
-@wip @smoke
+@wip @regression
 Feature: Web Table Login Functionality
 
   Scenario: Web Table Login scenario Hard coded implementation
@@ -7,6 +7,7 @@ Feature: Web Table Login Functionality
     And user enters correct password into password field
     Then user should see that URL ends with orders
 
+  @smoke
   Scenario: Web Table Login scenario parameterized implementation
     Given user goes to URL
     When  user enters valid "Test" into username field

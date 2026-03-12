@@ -3,6 +3,7 @@ package com.cydeo.step_defs;
 
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.*;
+import io.cucumber.messages.types.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -23,7 +24,8 @@ public class Hooks {
 
     }
 
-    @After // we need to select @After from io.cucumber.java, because it's directly implemented to Hooks. @Aterfter is running before every scenario.
+    @After
+    // we need to select @After from io.cucumber.java, because it's directly implemented to Hooks. @Aterfter is running before every scenario.
     public void teardownMethod(Scenario scenario) {
 
         // if we want to get screenshot for ever test we can use this as it is.
